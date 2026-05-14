@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Answer — IntuiTek¹</title>
+<meta name="description" content="400–600 words. Delivered to your inbox in under 5 minutes. $49.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.75;
+    padding: 60px 24px 80px;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 48px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 20px;
+  }
+  .section { margin-bottom: 36px; }
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  .section p { color: #333; font-size: 0.97rem; }
+  hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 48px 0;
+  }
+  .offer-block { text-align: center; }
+  .price {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+  .price-note {
+    font-size: 0.82rem;
+    color: #999;
+    margin-bottom: 32px;
+  }
+  #btn {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 16px 40px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.15s;
+    min-width: 240px;
+  }
+  #btn:hover { background: #333; }
+  #btn:disabled { background: #999; cursor: default; }
+  #status {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: #888;
+    min-height: 1.4em;
+  }
+  .guarantee {
+    margin-top: 48px;
+    font-size: 0.82rem;
+    color: #aaa;
+    text-align: center;
+  }
+  .sig {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.82rem;
+    color: #bbb;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">IntuiTek¹ — One-time diagnostic</p>
+
+  <h1>The Answer</h1>
+
+  <p class="sub">
+    You are not stuck because you lack information.<br>
+    You are stuck because you cannot see the system you are inside.
+  </p>
+
+  <div class="section">
+    <p class="section-label">What you get</p>
+    <p>
+      A single document. 400–600 words. Four sections: what is actually happening,
+      what is actually at risk, why you cannot see it from where you are,
+      and one specific move that changes your position in the next 48 hours.
+    </p>
+  </div>
+
+  <div class="section">
+    <p class="section-label">How it works</p>
+    <p>
+      You describe your situation in five fields — five minutes of writing.
+      You receive a diagnostic document in your inbox in under five minutes.
+      No call. No follow-up. No subscription.
+    </p>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Who writes it</p>
+    <p>
+      Kyle Million built a diagnostic sequence for reading situations as systems
+      rather than as problems. This is that sequence applied to yours.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="offer-block">
+    <p class="price">$49</p>
+    <p class="price-note">One time. One document. Delivered to your inbox.</p>
+    <button id="btn" onclick="checkout()">Get The Answer →</button>
+    <p id="status"></p>
+  </div>
+
+  <p class="guarantee">
+    If the document doesn't name something true about your situation,
+    reply to the email for a full refund.
+  </p>
+
+  <div class="sig">
+    <p>~K¹ (William Kyle Million) / IntuiTek¹</p>
+  </div>
+
+</div>
+
+<script>
+async function checkout() {
+  const btn = document.getElementById('btn');
+  const status = document.getElementById('status');
+  btn.disabled = true;
+  btn.textContent = 'Preparing…';
+  status.textContent = '';
+  try {
+    const res = await fetch('https://ace-license-server-production.up.railway.app/answer/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) throw new Error('Server error ' + res.status);
+    const data = await res.json();
+    if (data.checkout_url) {
+      status.textContent = 'Redirecting to secure checkout…';
+      window.location.href = data.checkout_url;
+    } else {
+      throw new Error('No checkout URL returned');
+    }
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Get The Answer →';
+    status.textContent = 'Something went wrong — please try again in a moment.';
+    console.error(err);
+  }
+}
+</script>
+</body>
+</html>
