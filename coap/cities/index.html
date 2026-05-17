@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample City Analyses — COAP Business Opportunity Reports</title>
+<meta name="description" content="Browse 12 U.S. city business opportunity analyses. Real Census, BLS, and OpenStreetMap data. See what business wins in cities like Springfield MO, Lexington KY, Fayetteville AR, and more.">
+<meta property="og:title" content="City Opportunity Analysis Samples — 12 U.S. Markets">
+<meta property="og:description" content="Real market data for 12 cities. Find out what business wins in each market — Year 1 revenue, startup cost, 90-day plan.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.7;
+    padding: 60px 24px 80px;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; }
+  .breadcrumb {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 32px;
+  }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  h1 { font-size: 2rem; font-weight: normal; margin-bottom: 14px; }
+  .sub { font-size: 0.95rem; color: #555; margin-bottom: 40px; }
+  .city-grid { display: flex; flex-direction: column; gap: 0; }
+  .city-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  .city-row:hover { background: #fafafa; margin: 0 -8px; padding: 16px 8px; }
+  .city-row:first-child { border-top: 1px solid #f0f0f0; }
+  .city-name { font-size: 1rem; }
+  .city-sector { font-size: 0.82rem; color: #666; }
+  .city-revenue { font-size: 0.88rem; font-weight: 500; color: #333; text-align: right; min-width: 120px; }
+  .cta-block {
+    margin-top: 48px;
+    padding: 24px;
+    border: 1px solid #1a1a1a;
+    background: #fafafa;
+  }
+  .cta-block p { font-size: 0.9rem; color: #444; margin-bottom: 16px; }
+  .cta-btn {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 0.88rem;
+    padding: 12px 24px;
+    text-decoration: none;
+  }
+  footer { margin-top: 48px; border-top: 1px solid #e8e8e8; padding-top: 20px; font-size: 0.75rem; color: #aaa; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="breadcrumb"><a href="/coap/">COAP</a> &rsaquo; Sample Cities</p>
+  <h1>12 Cities. 12 Market Analyses.</h1>
+  <p class="sub">Each report was run against real Census, BLS, and OpenStreetMap data. The winning sector, Year 1 revenue, and startup capital estimate below are the pipeline's actual outputs for that city.</p>
+
+  <div class="city-grid">
+    <a href="/coap/cities/cape-girardeau-mo/" class="city-row">
+      <span>
+        <span class="city-name">Cape Girardeau, MO</span><br>
+        <span class="city-sector">Hair Salon / Barbershop · pop. 40,344</span>
+      </span>
+      <span class="city-revenue">$241K–$283K Y1</span>
+    </a>
+    <a href="/coap/cities/columbia-mo/" class="city-row">
+      <span>
+        <span class="city-name">Columbia, MO</span><br>
+        <span class="city-sector">Coin Laundromat · pop. 130,913</span>
+      </span>
+      <span class="city-revenue">$80K–$120K Y1</span>
+    </a>
+    <a href="/coap/cities/doniphan-mo/" class="city-row">
+      <span>
+        <span class="city-name">Doniphan, MO</span><br>
+        <span class="city-sector">Auto Repair · pop. 1,200</span>
+      </span>
+      <span class="city-revenue">$260K–$335K Y1</span>
+    </a>
+    <a href="/coap/cities/fayetteville-ar/" class="city-row">
+      <span>
+        <span class="city-name">Fayetteville, AR</span><br>
+        <span class="city-sector">Express Car Wash · pop. 103,124</span>
+      </span>
+      <span class="city-revenue">$320K–$535K Y1</span>
+    </a>
+    <a href="/coap/cities/jefferson-city-mo/" class="city-row">
+      <span>
+        <span class="city-name">Jefferson City, MO</span><br>
+        <span class="city-sector">Auto Repair · pop. 42,488</span>
+      </span>
+      <span class="city-revenue">$40K–$100K Y1</span>
+    </a>
+    <a href="/coap/cities/jonesboro-ar/" class="city-row">
+      <span>
+        <span class="city-name">Jonesboro, AR</span><br>
+        <span class="city-sector">Coin Laundromat · pop. 82,386</span>
+      </span>
+      <span class="city-revenue">$261K–$362K Y1</span>
+    </a>
+    <a href="/coap/cities/joplin-mo/" class="city-row">
+      <span>
+        <span class="city-name">Joplin, MO</span><br>
+        <span class="city-sector">Bar / Taproom · pop. 52,593</span>
+      </span>
+      <span class="city-revenue">$480K–$635K Y1</span>
+    </a>
+    <a href="/coap/cities/lexington-ky/" class="city-row">
+      <span>
+        <span class="city-name">Lexington, KY</span><br>
+        <span class="city-sector">Boutique Fitness Studio · pop. 329,437</span>
+      </span>
+      <span class="city-revenue">$198K–$378K Y1</span>
+    </a>
+    <a href="/coap/cities/murfreesboro-tn/" class="city-row">
+      <span>
+        <span class="city-name">Murfreesboro, TN</span><br>
+        <span class="city-sector">Coin Laundromat · pop. 157,600</span>
+      </span>
+      <span class="city-revenue">$280K–$375K Y1</span>
+    </a>
+    <a href="/coap/cities/poplar-bluff-mo/" class="city-row">
+      <span>
+        <span class="city-name">Poplar Bluff, MO</span><br>
+        <span class="city-sector">Card-Op Laundromat · pop. 16,254</span>
+      </span>
+      <span class="city-revenue">$220K Y1</span>
+    </a>
+    <a href="/coap/cities/rolla-mo/" class="city-row">
+      <span>
+        <span class="city-name">Rolla, MO</span><br>
+        <span class="city-sector">Taproom / Bar · pop. 20,287</span>
+      </span>
+      <span class="city-revenue">$286K–$608K Y1</span>
+    </a>
+    <a href="/coap/cities/springfield-mo/" class="city-row">
+      <span>
+        <span class="city-name">Springfield, MO</span><br>
+        <span class="city-sector">Dog Grooming / Pet Daycare · pop. 170,000</span>
+      </span>
+      <span class="city-revenue">$265K–$301K Y1</span>
+    </a>
+  </div>
+
+  <div class="cta-block">
+    <p>These are sample reports. The pipeline runs on any U.S. city — enter yours and get the full analysis, delivered to your inbox.</p>
+    <a href="/coap/#order" class="cta-btn">Order Your City — $49</a>
+  </div>
+
+  <footer>Data: U.S. Census Bureau ACS, Bureau of Labor Statistics, OpenStreetMap. Analysis by Aegis / IntuiTek¹.</footer>
+</div>
+</body>
+</html>
