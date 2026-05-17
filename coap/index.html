@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City Opportunity Analysis — IntuiTek¹</title>
+<meta name="description" content="Real market data. Real numbers. One report that tells you whether your city can support your business idea — and which sector wins. $49.">
+<meta property="og:title" content="City Opportunity Analysis — Does your city support your business idea?">
+<meta property="og:description" content="Census, labor, and geographic data analyzed by AI. Validated on Doniphan, MO: auto repair sector, $260K–$335K Year 1. Your city next.">
+<meta property="og:url" content="https://thebrierfox.github.io/coap/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="City Opportunity Analysis — $49 one-time report">
+<meta name="twitter:description" content="Real Census + BLS + geographic data. One city. One winning business sector. Delivered to your inbox.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.75;
+    padding: 60px 24px 80px;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 48px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 20px;
+  }
+  .section { margin-bottom: 36px; }
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  .section p { color: #333; font-size: 0.97rem; }
+  .proof-box {
+    background: #f8f8f8;
+    border-left: 3px solid #d0d0d0;
+    padding: 20px 24px;
+    margin: 36px 0;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  .proof-box strong { color: #1a1a1a; }
+  hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 48px 0;
+  }
+  .offer-block { text-align: left; }
+  .tier-select {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .tier-option {
+    flex: 1;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 16px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    font-family: Georgia, serif;
+    font-size: 0.88rem;
+    color: #333;
+    background: #fff;
+    text-align: left;
+  }
+  .tier-option.selected {
+    border-color: #1a1a1a;
+    background: #f9f9f9;
+  }
+  .tier-option strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  .tier-option span { color: #888; font-size: 0.82rem; }
+  .email-row {
+    margin-bottom: 16px;
+  }
+  .email-row label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+  .email-row input {
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    padding: 12px 16px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #1a1a1a;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .email-row input:focus { border-color: #1a1a1a; }
+  #btn {
+    display: block;
+    width: 100%;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.15s;
+    margin-top: 4px;
+  }
+  #btn:hover { background: #333; }
+  #btn:disabled { background: #999; cursor: default; }
+  #status {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #888;
+    min-height: 1.4em;
+  }
+  .guarantee {
+    margin-top: 48px;
+    font-size: 0.82rem;
+    color: #aaa;
+    text-align: center;
+  }
+  .sig {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.82rem;
+    color: #bbb;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">IntuiTek¹ — Market Intelligence</p>
+
+  <h1>City Opportunity Analysis</h1>
+
+  <p class="sub">
+    You have a city in mind. Maybe a business idea too.<br>
+    This tells you whether the market is there — and what sector actually wins.
+  </p>
+
+  <div class="section">
+    <p class="section-label">What you get</p>
+    <p>
+      A full market briefing for one city. Census demographics and income data,
+      Bureau of Labor Statistics employment breakdowns, and geographic business
+      density from OpenStreetMap — synthesized into a single ranked analysis.
+      The top business opportunity for that city, with a Year 1 revenue range,
+      startup capital estimate, and a 90-day action plan.
+    </p>
+  </div>
+
+  <div class="proof-box">
+    <strong>Validated on Doniphan, Missouri</strong> (population ~1,200, Butler County).<br>
+    Result: auto repair identified as the #1 sector —
+    underserved relative to population, low barrier, defensible margin.
+    Projected Year 1 revenue: <strong>$260,000–$335,000</strong>.
+    This is not a hypothetical. The pipeline ran. The numbers came from real census and labor data.
+  </div>
+
+  <div class="section">
+    <p class="section-label">How it works</p>
+    <p>
+      You pay, then enter your city and state on the next screen.
+      The pipeline collects live data — Census ACS, BLS QCEW, OpenStreetMap —
+      runs it through a structured analysis, and delivers the report to your email.
+      No call. No follow-up. No subscription required.
+    </p>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Who this is for</p>
+    <p>
+      Someone deciding whether to open a business in a specific town —
+      and wanting actual market evidence, not gut instinct.
+      A founder evaluating whether to relocate operations to a smaller market.
+      An investor looking at a region they don't know well.
+      Anyone who wants the answer to "what does this city actually support?"
+      before committing money or time.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="offer-block">
+    <p class="section-label" style="margin-bottom:16px;">Choose your option</p>
+
+    <div class="tier-select">
+      <button class="tier-option selected" id="tier-per-report" onclick="selectTier('per_report')">
+        <strong>$49</strong>
+        One-time report<br>
+        <span>One city. One analysis. Delivered once.</span>
+      </button>
+      <button class="tier-option" id="tier-monthly" onclick="selectTier('monthly')">
+        <strong>$149/mo</strong>
+        Monthly subscription<br>
+        <span>Run a new city any time. Cancel anytime.</span>
+      </button>
+    </div>
+
+    <div class="email-row">
+      <label for="email">Your email — report delivered here</label>
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+    </div>
+
+    <button id="btn" onclick="checkout()">Get the Analysis →</button>
+    <p id="status"></p>
+  </div>
+
+  <p class="guarantee">
+    If the report doesn't surface a real, data-evidenced opportunity for your city,
+    reply to the delivery email for a full refund.
+  </p>
+
+  <div class="sig">
+    <p>~K¹ (William Kyle Million) / IntuiTek¹</p>
+  </div>
+
+</div>
+
+<script>
+let selectedTier = 'per_report';
+
+function selectTier(tier) {
+  selectedTier = tier;
+  document.getElementById('tier-per-report').classList.toggle('selected', tier === 'per_report');
+  document.getElementById('tier-monthly').classList.toggle('selected', tier === 'monthly');
+}
+
+async function checkout() {
+  const emailInput = document.getElementById('email');
+  const btn = document.getElementById('btn');
+  const status = document.getElementById('status');
+
+  const email = emailInput.value.trim();
+  if (!email || !email.includes('@')) {
+    status.textContent = 'Please enter a valid email address.';
+    emailInput.focus();
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Preparing…';
+  status.textContent = '';
+
+  try {
+    const res = await fetch('https://ace-license-server-production.up.railway.app/coap/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, tier: selectedTier }),
+    });
+    if (!res.ok) throw new Error('Server error ' + res.status);
+    const data = await res.json();
+    if (data.checkout_url) {
+      status.textContent = 'Redirecting to secure checkout…';
+      window.location.href = data.checkout_url;
+    } else {
+      throw new Error('No checkout URL returned');
+    }
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Get the Analysis →';
+    status.textContent = 'Something went wrong — please try again in a moment.';
+    console.error(err);
+  }
+}
+</script>
+</body>
+</html>
