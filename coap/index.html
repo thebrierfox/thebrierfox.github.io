@@ -155,6 +155,69 @@
     font-size: 0.82rem;
     color: #bbb;
   }
+  .samples-section { margin: 48px 0; }
+  .samples-section > .section-label { margin-bottom: 16px; }
+  .sample-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .sample-card summary {
+    cursor: pointer;
+    padding: 16px 20px;
+    font-size: 0.92rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+    user-select: none;
+  }
+  .sample-card summary::-webkit-details-marker { display: none; }
+  .sample-card summary::after {
+    content: '↓';
+    font-size: 0.8rem;
+    color: #aaa;
+    transition: transform 0.2s;
+  }
+  .sample-card[open] summary::after { transform: rotate(180deg); }
+  .sample-card summary:hover { background: #f9f9f9; }
+  .sample-card .sample-city { font-weight: bold; color: #1a1a1a; }
+  .sample-card .sample-result { color: #666; font-size: 0.82rem; margin-left: 12px; }
+  .sample-body {
+    padding: 0 20px 20px;
+    font-size: 0.88rem;
+    color: #444;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 16px;
+  }
+  .sample-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.85rem;
+  }
+  .sample-body th {
+    text-align: left;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #aaa;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .sample-body td { padding: 6px 0; border-bottom: 1px solid #f8f8f8; color: #333; }
+  .sample-body td:last-child { text-align: right; font-weight: 500; color: #1a1a1a; }
+  .sample-finding {
+    background: #f8f8f8;
+    border-left: 3px solid #d0d0d0;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #444;
+  }
+  .sample-finding strong { color: #1a1a1a; }
 </style>
 </head>
 <body>
@@ -207,6 +270,84 @@
       An investor looking at a region they don't know well.
       Anyone who wants the answer to "what does this city actually support?"
       before committing money or time.
+    </p>
+  </div>
+
+  <div class="samples-section">
+    <p class="section-label">Sample analyses — real cities, real data</p>
+
+    <details class="sample-card">
+      <summary>
+        <span><span class="sample-city">Doniphan, MO</span> — pop. 1,200 · rural Butler County</span>
+        <span class="sample-result">Winner: Auto Repair · $260K–$335K Year 1</span>
+      </summary>
+      <div class="sample-body">
+        <table>
+          <tr><th>Market Signal</th><th>Value</th></tr>
+          <tr><td>Median Household Income</td><td>$39,800</td></tr>
+          <tr><td>Auto Repair Shops (10km)</td><td>2</td></tr>
+          <tr><td>Population / Shop ratio</td><td>600:1 (underserved)</td></tr>
+          <tr><td>State Unemployment</td><td>3.4%</td></tr>
+        </table>
+        <div class="sample-finding">
+          <strong>Pipeline finding:</strong> Two auto repair shops for the entire Butler County corridor.
+          Independent vehicle dependency (no public transit), rural geography, and stable employment
+          create textbook demand for a third location. Startup capital: $60,000–$110,000.
+          Year 1 revenue projection: <strong>$260,000–$335,000</strong>. This was a real client report
+          delivered in 2025.
+        </div>
+      </div>
+    </details>
+
+    <details class="sample-card">
+      <summary>
+        <span><span class="sample-city">Cape Girardeau, MO</span> — pop. 40,344 · SEMO university town</span>
+        <span class="sample-result">Winner: Hair Salon / Barbershop · $241K net Year 1</span>
+      </summary>
+      <div class="sample-body">
+        <table>
+          <tr><th>Market Signal</th><th>Value</th></tr>
+          <tr><td>Median Household Income</td><td>$55,658</td></tr>
+          <tr><td>Median Age</td><td>34 (peak personal-care demographic)</td></tr>
+          <tr><td>Hair Salons in OSM (10km)</td><td>1 — for 40,344 residents</td></tr>
+          <tr><td>Gyms</td><td>0</td></tr>
+          <tr><td>University Enrollment</td><td>~11,000 (SEMO)</td></tr>
+        </table>
+        <div class="sample-finding">
+          <strong>Pipeline finding:</strong> One salon for 40,344 people against an industry norm
+          of one per 1,000–2,000. At 6-chair booth-rental model (5 chairs leased to independent stylists
+          + 1 owner-operated): <strong>$283,400 gross / $241,400 net Year 1</strong>.
+          Startup capital: $28,000–$45,000 (low scenario). ROI: <strong>536%</strong>.
+        </div>
+      </div>
+    </details>
+
+    <details class="sample-card">
+      <summary>
+        <span><span class="sample-city">Fayetteville, AR</span> — pop. 103,124 · NW Arkansas growth market</span>
+        <span class="sample-result">Winner: Express Car Wash · $785K–$1.05M Year 2</span>
+      </summary>
+      <div class="sample-body">
+        <table>
+          <tr><th>Market Signal</th><th>Value</th></tr>
+          <tr><td>Median Household Income</td><td>$66,237</td></tr>
+          <tr><td>Median Age</td><td>28</td></tr>
+          <tr><td>Median Home Value</td><td>$376,400 (high car-per-household income)</td></tr>
+          <tr><td>Car Washes (10km)</td><td>6 — for 103K residents in a growth city</td></tr>
+          <tr><td>Population Growth 2020–2024</td><td>+7,000 residents</td></tr>
+        </table>
+        <div class="sample-finding">
+          <strong>Pipeline finding:</strong> Fast-growing Sunbelt-adjacent market with high
+          vehicle ownership and income but thin car wash infrastructure. Express tunnel
+          with subscription model: Year 1 <strong>$320K–$535K</strong>, Year 2
+          <strong>$785K–$1.05M</strong> at full subscription ramp (600 members @ $34/mo + retail).
+          EBITDA margin 35–50% stabilized. Capital: $1.4M–$1.8M (SBA 504 eligible).
+        </div>
+      </div>
+    </details>
+
+    <p style="font-size:0.8rem;color:#aaa;margin-top:12px;">
+      All data from U.S. Census ACS 2024, BLS LAUS 2024, and OpenStreetMap. No paid data sources.
     </p>
   </div>
 
