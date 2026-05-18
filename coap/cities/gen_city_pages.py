@@ -255,6 +255,27 @@ CITIES = [
         "data_2": ("MSU Enrollment", "~25,000 students"),
         "data_3": ("Medical Employment", "20,000+ (CoxHealth + Mercy)"),
     },
+    {
+        "slug": "jackson-ms",
+        "name": "Jackson, MS",
+        "full": "Jackson, Mississippi",
+        "pop": "141,376",
+        "county": "Hinds County",
+        "anchor": "Mississippi state capital + Hope Credit Union HQ + state employment base",
+        "sector": "Modern Coin Laundry (3-site rollout)",
+        "sector_short": "Coin Laundromat",
+        "gap": "1 laundromat for 141,376 residents — 30–70× below national equilibrium",
+        "signal": "26.3% poverty rate + $1,101 median rent = structural, inelastic demand",
+        "y1_low": "$387,000",
+        "y1_high": "$397,000",
+        "startup_low": "$240,000",
+        "startup_high": "$340,000",
+        "headline_stat": "1 laundromat for 141,376 residents",
+        "roi_note": "38–54% EBITDA margin · 13–23 month payback · first operator owns the market",
+        "data_1": ("Poverty Rate", "26.3% — structural laundry demand floor"),
+        "data_2": ("Laundromats (10km)", "1 — for 141,376 residents"),
+        "data_3": ("Composite Opportunity Score", "45/50 — highest in pipeline"),
+    },
 ]
 
 PAGE_TEMPLATE = """\
