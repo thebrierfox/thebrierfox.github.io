@@ -276,6 +276,27 @@ CITIES = [
         "data_2": ("Laundromats (10km)", "1 — for 141,376 residents"),
         "data_3": ("Composite Opportunity Score", "45/50 — highest in pipeline"),
     },
+    {
+        "slug": "kansas-city-mo",
+        "name": "Kansas City, MO",
+        "full": "Kansas City, Missouri",
+        "pop": "508,394",
+        "county": "Jackson County",
+        "anchor": "East Corridor — 78,000 residents, 61% renter rate, documented service desert",
+        "sector": "Modern Coin Laundry / Wash-Dry-Fold Hub",
+        "sector_short": "Coin Laundromat",
+        "gap": "3 laundromats for 78,000 East Corridor residents — benchmark: 1 per 2,000–5,000",
+        "signal": "5x–13x undersaturation in KC's largest urban service gap",
+        "y1_low": "$56,200",
+        "y1_high": "$96,025",
+        "startup_low": "$85,000",
+        "startup_high": "$220,000",
+        "headline_stat": "3 laundromats for 78,000 residents",
+        "roi_note": "61% renter rate + aging stock without hookups = structural, non-cyclical demand",
+        "data_1": ("East KC Renter Rate", "61% — aging housing without in-unit laundry"),
+        "data_2": ("Laundromats (5km East KC)", "3 — for 78,000 residents"),
+        "data_3": ("Poverty Rate (East Corridor)", "28–34% — inelastic daily service demand"),
+    },
 ]
 
 PAGE_TEMPLATE = """\
