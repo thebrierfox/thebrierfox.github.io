@@ -17,5 +17,6 @@
   <url><loc>https://thebrierfox.github.io/coap/cities/springfield-mo/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/coap/cities/jackson-ms/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/coap/cities/kansas-city-mo/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thebrierfox.github.io/coap/cities/clarksville-tn/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/aegis/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
