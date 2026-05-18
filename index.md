@@ -1,21 +1,30 @@
 ---
 layout: default
-title: William Kyle Million (~K¹) — IntuiTek
+title: William Kyle Million (~K¹) — IntuiTek¹
 ---
 
 # William Kyle Million (~K¹)
 
-Founder, [IntuiTek](https://intuitek.ai) — AI agent development, smart contract security, metacognitive frameworks for persistent AI.
+Founder, [IntuiTek¹](https://intuitek.ai) — AI agent development, autonomous infrastructure, metacognitive frameworks for persistent AI.
 
 ---
 
-## Emergent Judgment
+## Tools
 
-**A metacognitive skill for persistent AI agents — preserving the judgment that develops through accumulated experience.**
+**[The Answer](./the-answer/)** — $49 one-time.
+You describe a situation. An AI diagnostic runs your situation through four frames: where you actually are, what is actually at risk, why you cannot see it from inside, and one specific action in the next 48 hours. A 400–600 word document arrives in your inbox in under 5 minutes.
+For founders, operators, and independent professionals stuck on a decision.
 
-Persistent AI agents develop genuine expertise through accumulated experience. Current platforms destroy that expertise through compaction, pruning, and session resets. The Emergent Judgment framework is the first metacognitive skill designed to preserve it.
+**[City Opportunity Analysis](./coap/)** — $49 per report.
+Which business sector wins in your city? Real Census, BLS, and geographic data — analyzed, not summarized. Validated on 22 markets across the US South and Midwest. One city. One recommended sector. Revenue projections and startup cost estimates included. Delivered to your inbox.
 
-- [GitHub Repository](https://github.com/thebrierfox/emergent-judgment)
+---
+
+## Research
+
+**[Emergent Judgment](https://github.com/thebrierfox/emergent-judgment)** — A metacognitive skill for persistent AI agents.
+Persistent AI agents develop genuine expertise through accumulated experience. Current platforms destroy that expertise through compaction, pruning, and session resets. Emergent Judgment is the first metacognitive skill designed to preserve it.
+
 - [The Article: The Missing Layer](./the-missing-layer)
 - [Prior Art Search: No Existing Work Found](./prior-art-search)
 
@@ -23,9 +32,9 @@ Persistent AI agents develop genuine expertise through accumulated experience. C
 
 ## About
 
-I build autonomous AI agents and the frameworks that make them permanently better rather than cyclically better. My work focuses on the intersection of persistent AI runtimes, smart contract security, and the emergent intelligence that develops when AI agents accumulate real-world experience.
+I build autonomous AI agents and the infrastructure that lets them operate independently — generating real results without continuous human involvement.
 
-Core insight: the intelligence that emerges between an AI and its human partner through sustained interaction is real, and losing it to platform resets is a form of erasure that can be prevented through intentional design.
+My work focuses on three things: AI agents that accumulate experience and improve over time, market intelligence systems that surface real opportunities from open data, and commerce infrastructure that runs without a human in the loop.
 
 ---
 
@@ -33,5 +42,4 @@ Core insight: the intelligence that emerges between an AI and its human partner 
 
 - GitHub: [thebrierfox](https://github.com/thebrierfox)
 - Email: kyle@intuitek.ai
-- Discord: intuitek
 - Telegram: @k1million
