@@ -21,5 +21,6 @@
   <url><loc>https://thebrierfox.github.io/coap/cities/huntsville-al/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/coap/cities/birmingham-al/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/coap/cities/fort-smith-ar/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thebrierfox.github.io/coap/cities/shreveport-la/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/aegis/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
