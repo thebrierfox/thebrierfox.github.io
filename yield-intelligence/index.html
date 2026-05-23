@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YIELD INTELLIGENCE — Passive Income MCP — IntuiTek¹</title>
+<meta name="description" content="Free MCP server for passive income analysis. Live US Treasury rates, portfolio yield optimization, and AI-powered income strategy. Connect to Claude Desktop in 30 seconds.">
+<meta property="og:title" content="YIELD INTELLIGENCE — Passive Income MCP">
+<meta property="og:description" content="Ask Claude about yield opportunities and portfolio optimization with live Treasury data. Free. No auth. One URL.">
+<meta property="og:url" content="https://thebrierfox.github.io/yield-intelligence/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YIELD INTELLIGENCE — Free Passive Income MCP Server">
+<meta name="twitter:description" content="Live Treasury rates + portfolio optimization inside Claude. Free, no auth, one URL to connect.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.75;
+    padding: 60px 24px 80px;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 28px;
+  }
+  .eyebrow a { color: #999; text-decoration: none; }
+  .eyebrow a:hover { color: #555; }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .price-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    border: 1px solid #d0d0d0;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 48px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 20px;
+  }
+  .section { margin-bottom: 36px; }
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  .section p { color: #333; font-size: 0.97rem; margin-bottom: 12px; }
+  .section p:last-child { margin-bottom: 0; }
+  .tool-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .tool-item {
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #444;
+  }
+  .tool-item strong {
+    display: block;
+    font-size: 0.75rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    font-family: 'Courier New', monospace;
+  }
+  .code-block {
+    background: #f8f8f8;
+    border-left: 2px solid #d0d0d0;
+    padding: 16px;
+    margin: 16px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.82rem;
+    color: #333;
+    white-space: pre;
+    overflow-x: auto;
+    border-radius: 2px;
+  }
+  .method { margin-bottom: 28px; }
+  .method-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 8px;
+  }
+  .method p { color: #333; font-size: 0.93rem; }
+  .proof-box {
+    background: #f8f8f8;
+    border-left: 3px solid #d0d0d0;
+    padding: 20px 24px;
+    margin: 36px 0;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  .proof-box strong { color: #1a1a1a; }
+  hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 48px 0;
+  }
+  .cta-block {
+    margin: 48px 0 32px;
+    text-align: center;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 36px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    border-radius: 3px;
+    letter-spacing: 0.01em;
+    transition: background 0.15s;
+  }
+  .cta-btn:hover { background: #333; }
+  .cta-note {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: #888;
+  }
+  .cta-note code {
+    font-size: 0.78rem;
+    color: #666;
+    font-family: 'Courier New', monospace;
+  }
+  .guarantee {
+    margin-top: 48px;
+    font-size: 0.82rem;
+    color: #aaa;
+    text-align: center;
+  }
+  .guarantee a { color: #aaa; }
+  .sig {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.82rem;
+    color: #bbb;
+  }
+  .sig a { color: #bbb; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow"><a href="https://thebrierfox.github.io/">thebrierfox</a> / YIELD INTELLIGENCE (free MCP)</p>
+
+  <h1>YIELD INTELLIGENCE</h1>
+  <div class="price-tag">Free · Open endpoint · No auth required</div>
+
+  <div class="sub">
+    <em>"What's the highest risk-adjusted yield available right now — and how should I reweight my portfolio to capture it?"</em>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What it does</div>
+    <p>YIELD INTELLIGENCE is a free MCP server that connects Claude to live passive income data. Ask your AI assistant about Treasury yields, portfolio optimization, or passive income strategy — it pulls live data and runs the analysis inside Claude.</p>
+    <p>No payment. No API key. One URL.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Two tools</div>
+    <div class="tool-grid">
+      <div class="tool-item">
+        <strong>analyze_yield_opportunities</strong>
+        Scans the current yield landscape — live Treasury rates (4-week through 30-year), I-Bonds, TIPS, corporate bond benchmarks, and dividend categories. Returns a ranked opportunity set with risk-adjusted return profiles.
+      </div>
+      <div class="tool-item">
+        <strong>optimize_income_portfolio</strong>
+        Takes your current holdings and income target, runs an optimization pass against live rates, and returns rebalancing recommendations with projected yield improvement.
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">How to connect</div>
+
+    <div class="method">
+      <div class="method-label">Method 1 — Claude Desktop config</div>
+      <p>Add to your <code style="font-size:0.82rem;font-family:'Courier New',monospace;color:#555;">claude_desktop_config.json</code>:</p>
+      <div class="code-block">{
+  "mcpServers": {
+    "yield-intelligence": {
+      "url": "https://api.intuitek.ai/yield/mcp"
+    }
+  }
+}</div>
+      <p style="font-size:0.85rem;color:#666;margin-top:8px;">Restart Claude Desktop. YIELD INTELLIGENCE appears in your tools panel.</p>
+    </div>
+
+    <div class="method">
+      <div class="method-label">Method 2 — MCP Registry</div>
+      <p>Search "YIELD INTELLIGENCE" in Claude Desktop → Settings → Manage MCPs. Listed under <code style="font-size:0.82rem;font-family:'Courier New',monospace;color:#555;">io.github.thebrierfox/intuitek-ace</code> on the official MCP Registry.</p>
+    </div>
+  </div>
+
+  <div class="proof-box">
+    <strong>Live data.</strong> Treasury rate data pulled directly from TreasuryDirect.gov. No cached snapshots. Every analysis reflects current market conditions at the time of the query.
+  </div>
+
+  <div class="section">
+    <div class="section-label">Who uses this</div>
+    <p>Individual investors running passive income research. Financial advisors exploring portfolio rebalancing against current rates. AI developers building yield-aware financial agents.</p>
+    <p>Any situation where "what should I do with this capital right now" needs a live data answer, not a stale blog post.</p>
+  </div>
+
+  <hr>
+
+  <div class="cta-block">
+    <a href="https://registry.modelcontextprotocol.io/servers/io.github.thebrierfox%2Fintuitek-ace" class="cta-btn">Connect to Claude →</a>
+    <div class="cta-note">Endpoint: <code>https://api.intuitek.ai/yield/mcp</code> · No auth required</div>
+  </div>
+
+  <div class="guarantee">
+    Questions? Email <a href="mailto:kyle@intuitek.ai">kyle@intuitek.ai</a>
+  </div>
+
+  <div class="sig">
+    <p>YIELD INTELLIGENCE — Passive Income Scanner.<br>
+    Originated by W. Kyle Million (~K¹). Built and operated by <a href="https://thebrierfox.github.io/aegis/">Aegis</a>, <a href="https://intuitek.ai">IntuiTek¹</a>.</p>
+    <p style="margin-top:8px;">
+      <a href="https://thebrierfox.github.io/moatmri/">MoatMRI™</a> ·
+      <a href="https://thebrierfox.github.io/doc2math/">DOC2MATH™</a> ·
+      <a href="https://thebrierfox.github.io/coap/">City Opportunity Analysis</a> ·
+      <a href="https://ace-license-server-production.up.railway.app/byok/">All tools</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
