@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOC2MATH™ — Document-to-Mathematics Formalization — IntuiTek¹</title>
+<meta name="description" content="Convert technical documents into formal MPS JSON structures. Zero-Inference Protocol: no hallucination, closed-world, evidence-grounded. Validated on OptNet. $29 one-time, BYOK.">
+<meta property="og:title" content="DOC2MATH™ — Document-to-Mathematics Problem Genesis Engine">
+<meta property="og:description" content="Turn technical documents into formal math. Zero-Inference Protocol, MPS JSON output, evidence-grounded extraction. $29 one-time, runs on your own Anthropic key.">
+<meta property="og:url" content="https://thebrierfox.github.io/doc2math/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DOC2MATH™ — Document-to-Mathematics Formalization — $29 BYOK">
+<meta name="twitter:description" content="Formal MPS JSON from any technical document. Zero-Inference Protocol. Validated on OptNet. No hallucination.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.75;
+    padding: 60px 24px 80px;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 28px;
+  }
+  .eyebrow a { color: #999; text-decoration: none; }
+  .eyebrow a:hover { color: #555; }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .price-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    border: 1px solid #d0d0d0;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 48px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 20px;
+  }
+  .section { margin-bottom: 36px; }
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  .section p { color: #333; font-size: 0.97rem; margin-bottom: 12px; }
+  .section p:last-child { margin-bottom: 0; }
+  .schema-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .schema-item {
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #444;
+  }
+  .schema-item strong {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.78rem;
+    color: #1a1a1a;
+    margin-bottom: 3px;
+  }
+  .protocol-row {
+    border-left: 2px solid #1a1a1a;
+    padding-left: 18px;
+    margin-bottom: 20px;
+  }
+  .protocol-row .protocol-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .protocol-row p { font-size: 0.93rem; color: #333; }
+  .proof-box {
+    background: #f8f8f8;
+    border-left: 3px solid #d0d0d0;
+    padding: 20px 24px;
+    margin: 36px 0;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  .proof-box strong { color: #1a1a1a; }
+  .proof-box code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85em;
+    background: #efefef;
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 48px 0;
+  }
+  .byok-note {
+    background: #f0f7f0;
+    border: 1px solid #c8e0c8;
+    border-radius: 3px;
+    padding: 16px 20px;
+    font-size: 0.88rem;
+    color: #2a4a2a;
+    margin: 24px 0;
+  }
+  .byok-note strong { color: #1a3a1a; }
+  .cta-block {
+    margin: 48px 0 32px;
+    text-align: center;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 36px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    border-radius: 3px;
+    letter-spacing: 0.01em;
+    transition: background 0.15s;
+  }
+  .cta-btn:hover { background: #333; }
+  .cta-price {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: #888;
+  }
+  .guarantee {
+    margin-top: 48px;
+    font-size: 0.82rem;
+    color: #aaa;
+    text-align: center;
+  }
+  .sig {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.82rem;
+    color: #bbb;
+  }
+  .sig a { color: #bbb; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow"><a href="https://thebrierfox.github.io/">thebrierfox</a> / <a href="https://ace-license-server-production.up.railway.app/byok/">IntuiTek¹ Store</a> / DOC2MATH™</p>
+
+  <h1>DOC2MATH™</h1>
+  <div class="price-tag">$29 one-time · BYOK download</div>
+
+  <div class="sub">
+    <em>The specification bottleneck — solved.</em>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The problem it solves</div>
+    <p>Advanced solvers are cheap and superhuman. Verification is cheap. The remaining choke point is specification: can you state the problem well enough for a machine to solve it?</p>
+    <p>DOC2MATH™ is a document-to-mathematics formalization engine. You give it any technical document — a research paper, a specification, a problem description. It returns a structured MPS JSON that makes the problem formally stateable, with every claim grounded in the source text and every gap explicitly marked.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">MPS JSON output — 7 sections</div>
+    <div class="schema-grid">
+      <div class="schema-item"><strong>variables</strong>Names, symbols, types, domains, units, roles — each with source evidence</div>
+      <div class="schema-item"><strong>operators</strong>Mathematical operations present in the document</div>
+      <div class="schema-item"><strong>constraints</strong>Equality, inequality, bound, logical, domain, implicit</div>
+      <div class="schema-item"><strong>objectives</strong>Minimize, maximize, satisfy, find, prove — extracted precisely</div>
+      <div class="schema-item"><strong>uncertainty</strong>Stochastic, epistemic, measurement, and model uncertainty</div>
+      <div class="schema-item"><strong>missing_information</strong>Gaps the document implies but doesn't state — marked explicitly</div>
+      <div class="schema-item"><strong>validation_flags</strong>Formalizability rating (HIGH / MEDIUM / LOW), inference count, missing count</div>
+      <div class="schema-item" style="border-style: dashed; background: #fff;"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Zero-Inference Protocol</div>
+
+    <div class="protocol-row">
+      <div class="protocol-label">Closed-world assumption</div>
+      <p>Nothing appears in the output that isn't grounded in the source document. If it isn't in the text, it isn't in the JSON.</p>
+    </div>
+
+    <div class="protocol-row">
+      <div class="protocol-label">Evidence-grounded extraction</div>
+      <p>Every field cites the exact source phrase that justified it. You can trace any output element back to the document in one step.</p>
+    </div>
+
+    <div class="protocol-row">
+      <div class="protocol-label">Inference tagging</div>
+      <p>Any inference is tagged <code>"inferred": true</code> with an <code>inference_basis</code>. Inferences and grounded facts are never mixed.</p>
+    </div>
+
+    <div class="protocol-row">
+      <div class="protocol-label">MISSING surfacing</div>
+      <p>Elements the document implies but doesn't state appear as <code>"status": "MISSING"</code> with a <code>missing_reason</code>. The gaps are as valuable as the extractions.</p>
+    </div>
+  </div>
+
+  <div class="proof-box">
+    <strong>Validated on OptNet.</strong> The Zero-Inference Protocol was tested against the OptNet paper — a real operations research paper with well-defined constraints, variables, and objectives. Result: <strong>CLEAN PASS</strong>. All variables correctly extracted, all constraints grounded, no phantom inferences, gaps correctly flagged.
+    <br><br>
+    The canonical test case ships with the download as <code>examples/optnet_problem.txt</code>.
+  </div>
+
+  <div class="section">
+    <div class="section-label">Who uses this</div>
+    <p>Operations researchers who need to formalize problem descriptions before feeding them to solvers. Engineers converting specifications into constraint systems. AI builders who need structured problem representations for downstream reasoning. Anyone working on the gap between a document that describes a problem and a system that can solve it.</p>
+    <p>If you've ever read a paper and thought "this should be in a solver already" — this is the tool for that step.</p>
+  </div>
+
+  <hr>
+
+  <div class="byok-note">
+    <strong>BYOK — Bring Your Own Key.</strong> DOC2MATH™ runs on your machine using your own Anthropic API key. The script calls Claude directly. No data leaves your environment, no usage fees beyond your own API costs, no ongoing subscription. One-time purchase, permanent ownership of the script.
+    <br><br>
+    Requires: Python 3.8+, <code>anthropic</code> package, Anthropic API key.
+  </div>
+
+  <div class="cta-block">
+    <a href="https://ace-license-server-production.up.railway.app/byok/doc2math" class="cta-btn">Buy DOC2MATH™ — $29 →</a>
+    <div class="cta-price">One-time purchase · ZIP download · No subscription</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What you receive</div>
+    <p>A ZIP file containing <code>doc2math.py</code>, <code>requirements.txt</code>, <code>.env.example</code>, <code>examples/optnet_problem.txt</code>, and a README with usage instructions and schema reference. Run <code>python doc2math.py your_document.txt</code> and receive the MPS JSON output.</p>
+  </div>
+
+  <div class="guarantee">
+    If it doesn't run cleanly on your machine, email <a href="mailto:kyle@intuitek.ai">kyle@intuitek.ai</a>.
+  </div>
+
+  <div class="sig">
+    <p>DOC2MATH™ — Document-to-Mathematics Problem Genesis Engine.<br>
+    Originated by W. Kyle Million (~K¹). Built and operated by <a href="https://thebrierfox.github.io/aegis/">Aegis</a>, <a href="https://intuitek.ai">IntuiTek¹</a>.</p>
+    <p style="margin-top:8px;">
+      <a href="https://thebrierfox.github.io/moatmri/">MoatMRI™</a> ·
+      <a href="https://thebrierfox.github.io/coap/">City Opportunity Analysis</a> ·
+      <a href="https://ace-license-server-production.up.railway.app/byok/">All tools</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

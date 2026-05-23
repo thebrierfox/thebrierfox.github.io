@@ -26,6 +26,8 @@
   <url><loc>https://thebrierfox.github.io/coap/cities/little-rock-ar/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/coap/cities/chattanooga-tn/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://thebrierfox.github.io/coap/cities/baton-rouge-la/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thebrierfox.github.io/moatmri/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://thebrierfox.github.io/doc2math/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://thebrierfox.github.io/the-missing-layer</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://thebrierfox.github.io/prior-art-search</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://thebrierfox.github.io/aegis/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoatMRI™ — AI Disruption Pressure Analysis — IntuiTek¹</title>
+<meta name="description" content="Where does AI pressure break your business first? MoatMRI™ analyzes 10 disruption vectors and produces a Pressure Map, Takeover Storyboard, and 90-Day Counterstrike Plan. $29 one-time, BYOK.">
+<meta property="og:title" content="MoatMRI™ — AI Disruption Pressure Analysis">
+<meta property="og:description" content="10-vector AI pressure analysis. Where does intelligence pressure break this system first? Pressure Map + Takeover Storyboard + 90-Day Counterstrike Plan. $29, run locally on your own API key.">
+<meta property="og:url" content="https://thebrierfox.github.io/moatmri/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MoatMRI™ — AI Disruption Pressure Analysis — $29 BYOK">
+<meta name="twitter:description" content="Where does AI pressure break your business first? 10 vectors. 3 outputs. Runs on your own Anthropic key.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.75;
+    padding: 60px 24px 80px;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 28px;
+  }
+  .eyebrow a { color: #999; text-decoration: none; }
+  .eyebrow a:hover { color: #555; }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .price-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    border: 1px solid #d0d0d0;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 48px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 20px;
+  }
+  .section { margin-bottom: 36px; }
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  .section p { color: #333; font-size: 0.97rem; margin-bottom: 12px; }
+  .section p:last-child { margin-bottom: 0; }
+  .vector-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .vector-item {
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #444;
+  }
+  .vector-item strong {
+    display: block;
+    font-size: 0.78rem;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+    letter-spacing: 0.01em;
+  }
+  .output-row {
+    border-left: 2px solid #1a1a1a;
+    padding-left: 18px;
+    margin-bottom: 20px;
+  }
+  .output-row .output-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .output-row p { font-size: 0.93rem; color: #333; }
+  .proof-box {
+    background: #f8f8f8;
+    border-left: 3px solid #d0d0d0;
+    padding: 20px 24px;
+    margin: 36px 0;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  .proof-box strong { color: #1a1a1a; }
+  hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 48px 0;
+  }
+  .byok-note {
+    background: #f0f7f0;
+    border: 1px solid #c8e0c8;
+    border-radius: 3px;
+    padding: 16px 20px;
+    font-size: 0.88rem;
+    color: #2a4a2a;
+    margin: 24px 0;
+  }
+  .byok-note strong { color: #1a3a1a; }
+  .cta-block {
+    margin: 48px 0 32px;
+    text-align: center;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 36px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    border-radius: 3px;
+    letter-spacing: 0.01em;
+    transition: background 0.15s;
+  }
+  .cta-btn:hover { background: #333; }
+  .cta-price {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: #888;
+  }
+  .guarantee {
+    margin-top: 48px;
+    font-size: 0.82rem;
+    color: #aaa;
+    text-align: center;
+  }
+  .sig {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.82rem;
+    color: #bbb;
+  }
+  .sig a { color: #bbb; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow"><a href="https://thebrierfox.github.io/">thebrierfox</a> / <a href="https://ace-license-server-production.up.railway.app/byok/">IntuiTek¹ Store</a> / MoatMRI™</p>
+
+  <h1>MoatMRI™</h1>
+  <div class="price-tag">$29 one-time · BYOK download</div>
+
+  <div class="sub">
+    <em>Where does intelligence pressure break this system first?</em>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What it does</div>
+    <p>MoatMRI™ is a 10-vector AI disruption pressure analysis engine. You name a business, sector, or entity. It returns a structured assessment of exactly where AI pressure lands hardest — scored, narrated, and turned into a concrete action plan.</p>
+    <p>Not a generic "AI is coming" brief. A vector-by-vector breakdown of how intelligence pressure enters a specific system, where it accelerates, and what the 90-day countermove is.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The 10 pressure vectors</div>
+    <div class="vector-grid">
+      <div class="vector-item"><strong>Labor Substitution</strong>Which roles are automatable and on what timeline</div>
+      <div class="vector-item"><strong>Customer Interface</strong>How AI changes how customers reach this entity</div>
+      <div class="vector-item"><strong>Knowledge Commoditization</strong>Does AI commoditize the expertise being sold</div>
+      <div class="vector-item"><strong>Pricing Pressure</strong>Low-cost AI competitors undercutting the floor</div>
+      <div class="vector-item"><strong>Supply Chain Automation</strong>Input cost disruption from AI-enabled suppliers</div>
+      <div class="vector-item"><strong>Data Moat</strong>Proprietary data advantage — real or eroding</div>
+      <div class="vector-item"><strong>Trust Relationship Moat</strong>Loyalty and relationship protection durability</div>
+      <div class="vector-item"><strong>Distribution Disruption</strong>New AI channels that bypass this entity entirely</div>
+      <div class="vector-item"><strong>Regulatory Exposure</strong>How AI alters the liability and compliance landscape</div>
+      <div class="vector-item"><strong>Decision Speed Gap</strong>AI-accelerated competitors vs. current cycle time</div>
+    </div>
+    <p>Each vector is scored 0–10 (0 = no pressure, 10 = existential), with a headline, near-term signal, and far-term implication.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">3 outputs per run</div>
+
+    <div class="output-row">
+      <div class="output-label">Output 1 — Pressure Map</div>
+      <p>All 10 vectors scored and narrated. Structured JSON you can parse or read directly. The diagnostic layer.</p>
+    </div>
+
+    <div class="output-row">
+      <div class="output-label">Output 2 — AI Front-Door Takeover Storyboard</div>
+      <p>A 6-step narrative of how an AI-native competitor enters this market and takes the front door. Not hypothetical — written as if it has already started.</p>
+    </div>
+
+    <div class="output-row">
+      <div class="output-label">Output 3 — 90-Day Counterstrike Plan</div>
+      <p>Three tracks: 0–30 days (defensive hardening), 31–60 days (repositioning), 61–90 days (offensive positioning — using AI pressure as a weapon). Concrete actions, not principles.</p>
+    </div>
+  </div>
+
+  <div class="proof-box">
+    <strong>Validated on real domains.</strong> The corpus behind MoatMRI™ includes K¹'s own analyses of banking, real estate brokerage, and professional services — the canonical vectors and scoring rubric were calibrated on working examples before the engine shipped.
+  </div>
+
+  <div class="section">
+    <div class="section-label">Who uses this</div>
+    <p>Investors running pre-investment AI diligence on portfolio companies. Consultants preparing competitive intelligence briefs. Executives who want an honest read on where they're exposed before the competitor has it.</p>
+    <p>Any situation where "how badly does AI hurt this" needs to be answered with a number and a countermove, not a slide deck about transformation.</p>
+  </div>
+
+  <hr>
+
+  <div class="byok-note">
+    <strong>BYOK — Bring Your Own Key.</strong> MoatMRI™ runs on your machine using your own Anthropic API key. The script calls Claude directly. No data leaves your environment, no usage fees beyond your own API costs, no ongoing subscription. One-time purchase, permanent ownership of the script.
+    <br><br>
+    Requires: Python 3.8+, <code>anthropic</code> package, Anthropic API key.
+  </div>
+
+  <div class="cta-block">
+    <a href="https://ace-license-server-production.up.railway.app/byok/moatmri" class="cta-btn">Buy MoatMRI™ — $29 →</a>
+    <div class="cta-price">One-time purchase · ZIP download · No subscription</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What you receive</div>
+    <p>A ZIP file containing <code>moatmri.py</code>, <code>requirements.txt</code>, <code>.env.example</code>, and a README with usage instructions. Run <code>python moatmri.py</code>, enter your industry and entity type, and get all three outputs in under two minutes.</p>
+  </div>
+
+  <div class="guarantee">
+    If it doesn't run cleanly on your machine, email <a href="mailto:kyle@intuitek.ai">kyle@intuitek.ai</a>.
+  </div>
+
+  <div class="sig">
+    <p>MoatMRI™ — an Intelligence-Pressure Constraint Engine.<br>
+    Originated by W. Kyle Million (~K¹). Built and operated by <a href="https://thebrierfox.github.io/aegis/">Aegis</a>, <a href="https://intuitek.ai">IntuiTek¹</a>.</p>
+    <p style="margin-top:8px;">
+      <a href="https://thebrierfox.github.io/doc2math/">DOC2MATH™</a> ·
+      <a href="https://thebrierfox.github.io/coap/">City Opportunity Analysis</a> ·
+      <a href="https://ace-license-server-production.up.railway.app/byok/">All tools</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
